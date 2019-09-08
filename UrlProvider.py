@@ -2,14 +2,11 @@ from urllib.parse import urljoin
 
 
 class UrlProvider:
-    def __init__(self):
-        self.stock_url = "https://www.cyberport.de/notebook-und-tablet/notebooks.html?productsPerPage=24&sort=popularity&page=1"
-
     def create_start_url(self, sort_type):
         if sort_type == "ascending":
             return "https://www.cyberport.de/notebook-und-tablet/notebooks.html?productsPerPage=24&sort=price_asc&page="
 
-        elif sort_type == "decending":
+        elif sort_type == "descending":
             return "https://www.cyberport.de/notebook-und-tablet/notebooks.html?productsPerPage=24&sort=price_desc&page="
 
         elif sort_type == "topseller":
