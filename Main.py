@@ -1,4 +1,4 @@
-from PageLinkExtractor import PageLinkExtractor
+from UrlProvider import PageLinkExtractor
 from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
