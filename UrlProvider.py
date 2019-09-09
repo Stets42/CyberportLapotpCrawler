@@ -21,3 +21,6 @@ class UrlProvider:
         for i in range(start, stop):
             url_list.append(self.create_start_url(sort_type) + str(i))
         return url_list
+
+    def build_article_url(self, reference_url):
+        return urljoin("https://cyberport.de", reference_url)
