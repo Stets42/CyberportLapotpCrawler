@@ -6,6 +6,7 @@ from UrlProvider import UrlProvider
 request = requests.get("https://www.cyberport.de/notebook-und-tablet/notebooks.html")
 page = BeautifulSoup(request.text, "html.parser")
 
+
 def get_total_page_count():
     numbers = []
     for item in page.select(".paging"):

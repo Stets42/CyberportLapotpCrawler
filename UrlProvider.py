@@ -1,5 +1,3 @@
-from urllib.parse import urljoin
-
 
 class UrlProvider:
     def __init__(self, max_page_count):
